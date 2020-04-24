@@ -1,0 +1,181 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.loading-spinner {
+  text-align: center;
+  margin: 20vh 50vw;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+.dark-blue {
+  background-color: #152f4d;
+  color: white;
+}
+
+.navbar-container {
+  background-color: #224770;
+  color: white;
+}
+
+.globalStats-container {
+  text-align: center;
+}
+
+.globalStats-container h2,
+h1 {
+  margin-top: 20px;
+}
+
+.globalStats-container h2:nth-of-type(1) {
+  color: orange;
+}
+
+.globalStats-container h2:nth-of-type(2) {
+  color: red;
+}
+
+.globalStats-container h2:nth-of-type(3) {
+  color: green;
+}
+
+.globalStats-container h2:nth-of-type(4) {
+  color: grey;
+}
+
+.world-map {
+  width: 50vw;
+}
+
+.globalStats-container {
+  background-color: #152f4d;
+}
+
+/* // Page Two CSS */
+
+.countryStats-container h2:nth-of-type(1) {
+  color: orange;
+}
+
+.countryStats-container h2:nth-of-type(2) {
+  color: rgb(255, 115, 0);
+}
+
+.countryStats-container h2:nth-of-type(3) {
+  color: rgb(255, 0, 0);
+}
+
+.countryStats-container h2:nth-of-type(4) {
+  color: rgb(255, 8, 0);
+}
+
+.countryStats-container h2:nth-of-type(5) {
+  color: rgb(16, 173, 42);
+}
+
+.countryStats-container h2:nth-of-type(6) {
+  color: rgb(0, 89, 255);
+}
+
+.countryStats-container h2:nth-of-type(7) {
+  color: rgb(231, 171, 114);
+}
+
+.countryStats-container h2:nth-of-type(8) {
+  color: rgb(150, 147, 145);
+}
+
+.countryStats-container h2:nth-of-type(9) {
+  color: rgb(255, 255, 255);
+}
+
+.countryStats-container h2:nth-of-type(10) {
+  color: rgb(255, 255, 255);
+}
+
+.plot-container {
+  margin: 0 auto;
+  background-color: #132233;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 50px;
+  margin-bottom: -18px;
+}
+
+.plot {
+  width: 70%;
+}
+
+.span-element {
+  font-size: 40px;
+  margin-right: 5px;
+}
+
+.footer-container {
+  background-color: #142b44;
+  color: white;
+}
+
+.data-source {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.disclaimer {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.about-virus {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.who-image {
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.about-container {
+  background-color: #152f4d;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 992px) {
+  .world-map {
+    width: 80vw;
+  }
+  .plot {
+    width: 100%;
+  }
+  .disclaimer {
+    width: 100%;
+  }
+
+  .who-image {
+    margin: 0 auto;
+    width: 80vw;
+  }
+}
