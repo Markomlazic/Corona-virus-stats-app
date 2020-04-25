@@ -110,7 +110,7 @@ class PageTwo extends React.Component {
         this.state.historicalDataFilter[0].timeline.recovered
       );
       ActiveCases = CasesY.map(function(num, idx) {
-        return num - DeathsY[idx];
+        return num - DeathsY[idx] - RecoveredY[idx];
       });
     } else {
       CasesY = this.state.historicalDataFilter
@@ -134,7 +134,7 @@ class PageTwo extends React.Component {
         this.state.historicalDataFilter[0].timeline.deaths
       );
       ActiveCases = CasesY.map(function(num, idx) {
-        return num - DeathsY[idx];
+        return num - DeathsY[idx] - RecoveredY[idx];
       });
     }
 
