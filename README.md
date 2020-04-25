@@ -1,3 +1,10 @@
+##Corona Virus Tracking App
+
+App shows a world map with current number of active cases and number of deaths. Provides also daily and historical data for each country affected by the new corona virus. Developed in React.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
