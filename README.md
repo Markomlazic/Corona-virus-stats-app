@@ -1,6 +1,6 @@
 ## Corona Virus Tracking App
 
-App shows a world map with current number of active cases and number of deaths. Provides also daily and historical data for each country affected by the new corona virus. Developed in React.
+App shows a world map with current number of active cases and number of deaths. Provides also daily and historical data for each country affected by the new corona virus. Developed in React. Available at: https://covid-19-corona-stats.netlify.app/
 
 
 
