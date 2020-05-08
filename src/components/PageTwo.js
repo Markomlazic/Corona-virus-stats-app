@@ -25,37 +25,33 @@ class PageTwo extends React.Component {
   async componentDidMount() {
     fetch("https://corona.lmao.ninja/v2/countries")
       .then(res => res.json())
-      .then(
-        result => {
-          this.setState({
-            isLoaded: true,
-            countryData: result
-          });
-        },
-        error => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      );
+      .then(result => {
+        this.setState({
+          isLoaded: true,
+          countryData: result
+        });
+      })
+      .catch(error => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      });
 
     fetch("https://corona.lmao.ninja/v2/historical")
       .then(res => res.json())
-      .then(
-        result => {
-          this.setState({
-            isLoaded: true,
-            historicalData: result
-          });
-        },
-        error => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      );
+      .then(result => {
+        this.setState({
+          isLoaded: true,
+          historicalData: result
+        });
+      })
+      .catch(error => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      });
   }
 
   handleCountryChange(event) {

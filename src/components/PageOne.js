@@ -22,37 +22,33 @@ class PageOne extends React.Component {
   async componentDidMount() {
     fetch("https://corona.lmao.ninja/v2/all")
       .then(res => res.json())
-      .then(
-        result => {
-          this.setState({
-            isLoaded: true,
-            globalData: result
-          });
-        },
-        error => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      );
+      .then(result => {
+        this.setState({
+          isLoaded: true,
+          globalData: result
+        });
+      })
+      .catch(error => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      });
 
     fetch("https://corona.lmao.ninja/v2/countries")
       .then(res => res.json())
-      .then(
-        result => {
-          this.setState({
-            isLoaded: true,
-            countryData: result
-          });
-        },
-        error => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      );
+      .then(result => {
+        this.setState({
+          isLoaded: true,
+          countryData: result
+        });
+      })
+      .catch(error => {
+        this.setState({
+          isLoaded: true,
+          error
+        });
+      });
   }
 
   render() {
